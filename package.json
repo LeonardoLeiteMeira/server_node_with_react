@@ -1,0 +1,22 @@
+{
+	"name": "node_test",
+	"version": "1.0.0",
+	"description": "Testando banck end e front end na mesma aplicação",
+	"main": "index.js",
+	"author": "Leonardo Leite",
+	"license": "MIT",
+	"scripts": {
+		"client": "cd client && yarn start",
+		"server": "nodemon index.js",
+		"dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\""
+	},
+	"dependencies": {
+		"concurrently": "^5.2.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"http": "^0.0.1-security"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	}
+}
