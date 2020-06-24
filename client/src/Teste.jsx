@@ -12,7 +12,7 @@ function Botao() {
 		});
 
 		var response = await axiosInstance.get(
-			"https://testedeploycommit.herokuapp.com/api/test"
+			"" // "https://testedeploycommit.herokuapp.com/api/test"
 		);
 		console.log(response.data);
 		return response;
