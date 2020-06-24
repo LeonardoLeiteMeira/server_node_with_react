@@ -11,7 +11,9 @@ function Botao() {
 			timeout: 50000,
 		});
 
-		var response = await axiosInstance.get("http://localhost:80/api/test");
+		var response = await axiosInstance.get(
+			"https://testedeploycommit.herokuapp.com/api/test"
+		);
 		console.log(response.data);
 		return response;
 	}
@@ -35,7 +37,7 @@ function Botao() {
 		<>
 			<p>{variavel}</p>
 			<button className="btn" onClick={() => getMensage1()}>
-				helloWorld
+				helloWorld teste
 			</button>
 
 			<button className="btn" onClick={() => getMensage2()}>
