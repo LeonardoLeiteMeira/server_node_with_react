@@ -12,7 +12,7 @@ function Botao() {
 		});
 
 		var response = await axiosInstance.get(
-			"" // "https://testedeploycommit.herokuapp.com/api/test"
+			"http://crivo-commitjr-com.umbler.net//api/test"
 		);
 		console.log(response.data);
 		return response;
