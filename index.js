@@ -3,9 +3,10 @@ const cors = require("cors");
 const http = require("http");
 const path = require("path");
 
-const baseDir = `${__dirname}/client/build/`;
+// const baseDir = `${__dirname}/client/build/`;
+const baseDir = path.resolve("client", "build");
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 21252;
 
 app.use(cors());
 app.use(express.static(`${baseDir}`));
