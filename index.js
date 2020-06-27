@@ -16,9 +16,9 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.get("/api/test", (request, response) => {
 	return response.json({
-		helloWorld: "Hello-World",
-		BackEnd: "NodeJs-App",
-		FrontEnd: "React-App",
+		helloWorld: "Hello World",
+		BackEnd: "NodeJs App",
+		FrontEnd: "React App",
 	});
 });
 
