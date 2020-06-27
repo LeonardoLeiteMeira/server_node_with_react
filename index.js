@@ -6,7 +6,7 @@ const path = require("path");
 // const baseDir = `${__dirname}/client/build/`;
 const baseDir = path.resolve("build");
 const app = express();
-const port = process.env.PORT || 21252;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.static(`${baseDir}`));
