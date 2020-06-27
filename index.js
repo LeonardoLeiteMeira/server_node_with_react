@@ -4,7 +4,7 @@ const http = require("http");
 const path = require("path");
 
 // const baseDir = `${__dirname}/client/build/`;
-const baseDir = path.resolve("client", "build");
+const baseDir = path.resolve("build");
 const app = express();
 const port = process.env.PORT || 21252;
 
