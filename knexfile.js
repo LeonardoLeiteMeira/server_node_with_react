@@ -1,14 +1,15 @@
+require("dotenv/config");
 // Update with your config settings.
 
 module.exports = {
 	development: {
-		client: "mysql2",
+		client: process.env.CLIENT_DB,
 		connection: {
-			host: "mysql669.umbler.com",
-			port: "41890",
-			database: "testecrivo",
-			user: "leonardodb",
-			password: "administrador",
+			host: process.env.HOST_DB,
+			port: process.env.PORT_DB,
+			database: process.env.DATABASE,
+			user: process.env.USER_DB,
+			password: process.env.PASSWORD_DB,
 		},
 		pool: {
 			min: 2,
