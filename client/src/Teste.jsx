@@ -12,7 +12,7 @@ function Botao() {
 		});
 
 		var response = await axiosInstance.get(
-			"http://localhost:3000/api/test"
+			"http://crivo-commitjr-com.umbler.net/api/test"
 		);
 		console.log(response.data);
 		return response;
