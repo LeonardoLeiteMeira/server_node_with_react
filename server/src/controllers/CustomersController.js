@@ -1,5 +1,4 @@
 const knex = require("../../database");
-const { request } = require("http");
 
 module.exports = {
 	async getCustomers(request, response, next) {
