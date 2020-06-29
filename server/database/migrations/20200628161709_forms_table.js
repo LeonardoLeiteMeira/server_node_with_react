@@ -3,11 +3,11 @@ exports.up = function (knex) {
 		table.increments("Id").primary();
 		table
 			.integer("Customer_Id")
-			.unsigned()
+			.unsigned() //sem essa linha da erro na FK
 			.references("Id")
 			.inTable("Customers")
 			.notNullable()
-			.onDelete("CASCADE");
+			.onDelete("CASCADE"); //se customer for deletado, os formularios dele tambem são
 		table.string("Data", 1000);
 		table.string("Type", 30).notNullable;
 		table.timestamps(true, true);
