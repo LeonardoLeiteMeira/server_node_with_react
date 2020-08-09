@@ -1,7 +1,5 @@
 const express = require("express");
 const routes = express.Router();
-const path = require("path");
-const baseDir = path.resolve("client", "build");
 
 const CustomersController = require("./controllers/CustomersController");
 const TestController = require("./controllers/TestController");
